@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui/index.js" {
+  themes: autumn --default, black --prefersdark;
+}
+
+/* Scan paths for class discovery */
+@source '../views/**/*.blade.php';
+@source '../../../../resources/views/**/*.blade.php';
+/* T-CMS Core package views (breadcrumbs, menu, etc.) */
+@source '../../../../../cms/resources/views/**/*.blade.php';
+/* T-CMS Block PHP files (contains daisyUI class definitions) */
+@source '../../../../../blocks/src/Blocks/**/*.php';
+/* All plugin frontend views — auto-includes current and future plugins */
+@source "../../../../plugins/**/resources/views/**/*.blade.php";
+
+/* T-CMS Core Styles */
+@import "../../../../resources/css/tcms.css";
+
+/* Theme-specific styles */

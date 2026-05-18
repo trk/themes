@@ -1,0 +1,109 @@
+{
+    "name": "Autumn",
+    "slug": "autumn",
+    "version": "1.0.0",
+    "description": "Warm autumn colors with cozy dark mode",
+    "author": "Totoglu",
+    "daisyui": {
+        "preset": "autumn",
+        "prefersDark": "black"
+    },
+    "tags": [
+        "blog",
+        "editorial"
+    ],
+    "supports": {
+        "dark_mode": true,
+        "theme_controller": false,
+        "responsive": true,
+        "animations": true
+    },
+    "screenshots": {
+        "primary": null
+    },
+    "build": {
+        "entries": [
+            "resources/css/app.css",
+            "resources/js/app.js"
+        ]
+    },
+    "templates": {
+        "example": {
+            "label": "Example Template",
+            "description": "A custom example template for this theme",
+            "has_sidebar": false,
+            "minimal_chrome": false
+        }
+    },
+    "cms_layouts": [
+        {
+            "handle": "theme.autumn.page",
+            "label": "Autumn Page Layout",
+            "page_type_handle": "default",
+            "context": "page",
+            "sort_order": 100,
+            "content": {
+                "en": [
+                    {
+                        "type": "block",
+                        "attrs": {
+                            "id": "column",
+                            "config": {
+                                "blocks": [
+                                    {
+                                        "type": "block",
+                                        "attrs": {
+                                            "id": "layout_slot",
+                                            "config": {
+                                                "slot": "page.blocks"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "block",
+                                        "attrs": {
+                                            "id": "layout_slot",
+                                            "config": {
+                                                "slot": "page.content"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "tr": [
+                    {
+                        "type": "block",
+                        "attrs": {
+                            "id": "column",
+                            "config": {
+                                "blocks": [
+                                    {
+                                        "type": "block",
+                                        "attrs": {
+                                            "id": "layout_slot",
+                                            "config": {
+                                                "slot": "page.blocks"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "block",
+                                        "attrs": {
+                                            "id": "layout_slot",
+                                            "config": {
+                                                "slot": "page.content"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
