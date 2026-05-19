@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui/index.js" {
+  themes: silk --default, luxury --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "silk";
+  default: true;
+  color-scheme: "light";
+  --color-primary: oklch(0.69 0.11 86);         /* Rich Warm Bronze/Gold */
+  --color-primary-content: oklch(0.99 0.005 60); /* Silk White */
+  --color-secondary: oklch(0.32 0.05 75);       /* Deep Warm Taupe */
+  --color-secondary-content: oklch(0.99 0.005 60);
+  --color-accent: oklch(0.78 0.08 75);          /* Soft Champagne Gold */
+  --color-accent-content: oklch(0.22 0.02 60);
+  --color-neutral: oklch(0.25 0.02 60);
+  --color-base-100: oklch(0.99 0.005 60);       /* Silk Cream White */
+  --color-base-200: oklch(0.97 0.01 60);        /* Smooth warm sand */
+  --color-base-300: oklch(0.92 0.01 60);        /* Fine outline */
+  --color-base-content: oklch(0.22 0.02 60);    /* Elegant Charcoal-Taupe */
+  
+  --rounded-box: 0.75rem;                       /* Balanced premium corners */
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 9999px;
+  --border-btn: 1px;
+}
+
+@plugin "daisyui/theme" {
+  name: "luxury";
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-primary: oklch(0.76 0.12 86);         /* Glowing Luxury Gold */
+  --color-primary-content: oklch(0.12 0.01 60);
+  --color-secondary: oklch(0.88 0.04 86);       /* Platinum Champagne */
+  --color-secondary-content: oklch(0.12 0.01 60);
+  --color-accent: oklch(0.82 0.08 75);          /* Rose Gold Highlight */
+  --color-accent-content: oklch(0.12 0.01 60);
+  --color-neutral: oklch(0.20 0.01 60);
+  --color-base-100: oklch(0.12 0.01 60);        /* Warm Charcoal Obsidian */
+  --color-base-200: oklch(0.15 0.01 60);        /* Deep Premium Black */
+  --color-base-300: oklch(0.20 0.02 60);        /* Fine Gold-Tinted border */
+  --color-base-content: oklch(0.93 0.01 60);    /* Warm Ivory soft white */
+  
+  --rounded-box: 0.75rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 9999px;
+  --border-btn: 1px;
+}
+
+/* Scan paths for class discovery */
+@source '../views/**/*.blade.php';
+@source '../../../../resources/views/**/*.blade.php';
+/* T-CMS Core package views (breadcrumbs, menu, etc.) */
+@source '../../../../packages/totoglu/cms/resources/views/**/*.blade.php';
+/* Blocks plugin not installed - no block sources registered */
+/* All plugin frontend views — auto-includes current and future plugins */
+@source '../../../../plugins/**/resources/views/**/*.blade.php';
+
+/* T-CMS Core Styles */
+@import "../../../../resources/css/tcms.css";
+
+/* Theme-specific styles */

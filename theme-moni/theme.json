@@ -1,0 +1,27 @@
+{
+    "name": "theme-moni",
+    "slug": "theme-moni",
+    "version": "1.0.0",
+    "description": "A premium luxury theme for Moni Hotel & Apartments with daisyUI v5 integration",
+    "author": "Antigravity",
+    "daisyui": {
+        "preset": "silk",
+        "prefersDark": "luxury",
+        "presets": [
+            "silk",
+            "luxury"
+        ]
+    },
+    "tags": ["luxury", "hotel"],
+    "supports": {
+        "dark_mode": true,
+        "theme_controller": true,
+        "responsive": true,
+        "animations": true
+    },
+    "build": {
+        "css": "resources/css/app.css",
+        "js": "resources/js/app.js",
+        "output": "public"
+    }
+}
