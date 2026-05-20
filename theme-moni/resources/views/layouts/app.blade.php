@@ -79,9 +79,33 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-100 rounded-box w-52 border border-base-300">
+                    <div tabindex="0" class="dropdown-content mt-3 z-[1] p-3 shadow-lg bg-base-100 rounded-box w-56 border border-base-300">
                         <x-menu location="header" style="vertical" />
-                    </ul>
+                        
+                        <!-- Mobile Language Switcher -->
+                        <div class="divider my-2"></div>
+                        <div class="flex items-center justify-center gap-4 py-1 text-sm font-semibold tracking-wider">
+                            @php
+                                $registry = app(\Totoglu\Cms\Services\LocaleRegistry::class);
+                                $currentLocale = app()->getLocale();
+                                $locales = $registry->getLocales();
+                            @endphp
+                            @foreach($locales as $code => $locale)
+                                <a href="{{ url(tcms_localized_url(tcms_current_slug(), $code)) }}" 
+                                   class="px-2.5 py-1 rounded-md transition-all duration-200 {{ $code === $currentLocale ? 'text-primary bg-primary/10' : 'text-base-content/60 hover:text-base-content hover:bg-base-200' }}">
+                                    {{ strtoupper($code) }}
+                                </a>
+                                @if(!$loop->last)
+                                    <span class="text-base-content/20">|</span>
+                                @endif
+                            @endforeach
+                        </div>
+                        
+                        <div class="divider my-2"></div>
+                        <a href="https://www.reseliva.com/booknow/Moni-Hotel/?&lang={{ app()->getLocale() }}" target="_blank" class="btn btn-success btn-sm bg-[#22c55e] hover:bg-[#16a34a] border-[#22c55e] hover:border-[#16a34a] text-white font-semibold w-full text-center">
+                            {{ app()->getLocale() === 'tr' ? 'Rezervasyon Yap' : 'Book Now' }}
+                        </a>
+                    </div>
                 </div>
                 <!-- Logo -->
                 @php
@@ -99,19 +123,22 @@
 
             <!-- Desktop Menu -->
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 gap-1">
-                    <x-menu location="header" style="horizontal" />
-                </ul>
+                <x-menu location="header" style="horizontal" class="flex" />
             </div>
 
             <div class="navbar-end gap-2 px-2">
-                <!-- Language Switcher from Talldaisy (if present) -->
-                @if(view()->exists('theme.talldaisy::components.language-switcher'))
-                    @include('theme.talldaisy::components.language-switcher')
+                <!-- Premium Custom Language Switcher -->
+                @if(view()->exists('theme.theme-moni::components.language-switcher'))
+                    @include('theme.theme-moni::components.language-switcher')
                 @endif
                 
                 <!-- Animated theme-moni Custom Theme Switcher -->
                 @include('theme.theme-moni::components.theme-switcher')
+
+                <!-- Premium Reservation Button -->
+                <a href="https://www.reseliva.com/booknow/Moni-Hotel/?&lang={{ app()->getLocale() }}" target="_blank" class="btn btn-success bg-[#22c55e] hover:bg-[#16a34a] border-[#22c55e] hover:border-[#16a34a] text-white font-semibold shadow-md hidden sm:inline-flex">
+                    {{ app()->getLocale() === 'tr' ? 'REZERVASYON' : 'BOOK NOW' }}
+                </a>
             </div>
         </div>
     @endif
