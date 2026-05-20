@@ -5,11 +5,12 @@
     "description": "A premium luxury theme for Moni Hotel & Apartments with daisyUI v5 integration",
     "author": "Antigravity",
     "daisyui": {
-        "preset": "silk",
-        "prefersDark": "luxury",
+        "preset": "moniotel",
+        "prefersDark": "moniotel-night",
         "presets": [
-            "silk",
-            "luxury"
+            "moniotel",
+            "moniotel-night",
+            "moni-apartment"
         ]
     },
     "tags": ["luxury", "hotel"],

@@ -1,49 +1,70 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui/index.js" {
-  themes: silk --default, luxury --prefersdark;
+  themes:
+    moniotel --default,
+    moniotel-night --prefersdark,
+    moni-apartment;
 }
 
 @plugin "daisyui/theme" {
-  name: "silk";
+  name: "moniotel";
   default: true;
   color-scheme: "light";
-  --color-primary: oklch(0.69 0.11 86);         /* Rich Warm Bronze/Gold */
-  --color-primary-content: oklch(0.99 0.005 60); /* Silk White */
-  --color-secondary: oklch(0.32 0.05 75);       /* Deep Warm Taupe */
-  --color-secondary-content: oklch(0.99 0.005 60);
-  --color-accent: oklch(0.78 0.08 75);          /* Soft Champagne Gold */
-  --color-accent-content: oklch(0.22 0.02 60);
-  --color-neutral: oklch(0.25 0.02 60);
-  --color-base-100: oklch(0.99 0.005 60);       /* Silk Cream White */
-  --color-base-200: oklch(0.97 0.01 60);        /* Smooth warm sand */
-  --color-base-300: oklch(0.92 0.01 60);        /* Fine outline */
-  --color-base-content: oklch(0.22 0.02 60);    /* Elegant Charcoal-Taupe */
-  
-  --rounded-box: 0.75rem;                       /* Balanced premium corners */
-  --rounded-btn: 0.5rem;
+  --color-primary: oklch(0.74 0.12 86);
+  --color-primary-content: oklch(0.99 0.01 80);
+  --color-secondary: oklch(0.32 0.03 70);
+  --color-secondary-content: oklch(0.99 0.01 80);
+  --color-accent: oklch(0.66 0.1 190);
+  --color-accent-content: oklch(0.12 0.02 200);
+  --color-neutral: oklch(0.23 0.02 70);
+  --color-base-100: oklch(0.99 0.01 80);
+  --color-base-200: oklch(0.97 0.01 80);
+  --color-base-300: oklch(0.92 0.01 80);
+  --color-base-content: oklch(0.21 0.02 70);
+  --rounded-box: 1rem;
+  --rounded-btn: 9999px;
   --rounded-badge: 9999px;
   --border-btn: 1px;
 }
 
 @plugin "daisyui/theme" {
-  name: "luxury";
+  name: "moniotel-night";
   prefersdark: true;
   color-scheme: "dark";
-  --color-primary: oklch(0.76 0.12 86);         /* Glowing Luxury Gold */
-  --color-primary-content: oklch(0.12 0.01 60);
-  --color-secondary: oklch(0.88 0.04 86);       /* Platinum Champagne */
-  --color-secondary-content: oklch(0.12 0.01 60);
-  --color-accent: oklch(0.82 0.08 75);          /* Rose Gold Highlight */
-  --color-accent-content: oklch(0.12 0.01 60);
-  --color-neutral: oklch(0.20 0.01 60);
-  --color-base-100: oklch(0.12 0.01 60);        /* Warm Charcoal Obsidian */
-  --color-base-200: oklch(0.15 0.01 60);        /* Deep Premium Black */
-  --color-base-300: oklch(0.20 0.02 60);        /* Fine Gold-Tinted border */
-  --color-base-content: oklch(0.93 0.01 60);    /* Warm Ivory soft white */
-  
-  --rounded-box: 0.75rem;
-  --rounded-btn: 0.5rem;
+  --color-primary: oklch(0.78 0.12 86);
+  --color-primary-content: oklch(0.12 0.02 70);
+  --color-secondary: oklch(0.86 0.05 86);
+  --color-secondary-content: oklch(0.12 0.02 70);
+  --color-accent: oklch(0.7 0.1 190);
+  --color-accent-content: oklch(0.12 0.02 200);
+  --color-neutral: oklch(0.2 0.01 70);
+  --color-base-100: oklch(0.13 0.01 70);
+  --color-base-200: oklch(0.17 0.01 70);
+  --color-base-300: oklch(0.24 0.02 70);
+  --color-base-content: oklch(0.93 0.01 80);
+  --rounded-box: 1rem;
+  --rounded-btn: 9999px;
+  --rounded-badge: 9999px;
+  --border-btn: 1px;
+}
+
+@plugin "daisyui/theme" {
+  name: "moni-apartment";
+  color-scheme: "light";
+  --color-primary: oklch(0.66 0.1 190);
+  --color-primary-content: oklch(0.99 0.01 190);
+  --color-secondary: oklch(0.74 0.12 86);
+  --color-secondary-content: oklch(0.12 0.02 70);
+  --color-accent: oklch(0.73 0.12 40);
+  --color-accent-content: oklch(0.12 0.02 40);
+  --color-neutral: oklch(0.23 0.02 70);
+  --color-base-100: oklch(0.99 0.01 80);
+  --color-base-200: oklch(0.97 0.01 80);
+  --color-base-300: oklch(0.92 0.01 80);
+  --color-base-content: oklch(0.21 0.02 70);
+  --rounded-box: 1rem;
+  --rounded-btn: 9999px;
   --rounded-badge: 9999px;
   --border-btn: 1px;
 }
@@ -63,3 +84,31 @@
 @import "../../../../resources/css/tcms.css";
 
 /* Theme-specific styles */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-feature-settings:
+      "ss01" 1,
+      "cv11" 1,
+      "cv02" 1,
+      "cv03" 1;
+  }
+}
+
+@layer components {
+  .moni-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .moni-section {
+    @apply py-14 sm:py-16 lg:py-20;
+  }
+
+  .moni-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-primary/70;
+  }
+}
