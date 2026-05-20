@@ -13,12 +13,18 @@
             "moni-apartment"
         ]
     },
-    "tags": ["luxury", "hotel"],
+    "tags": [
+        "luxury",
+        "hotel"
+    ],
     "supports": {
         "dark_mode": true,
         "theme_controller": true,
         "responsive": true,
         "animations": true
+    },
+    "install": {
+        "seed_data": "install/seed.json"
     },
     "build": {
         "css": "resources/css/app.css",

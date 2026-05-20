@@ -1,0 +1,1247 @@
+{
+  "site_settings": [
+    {
+      "key": "site_tagline",
+      "value": "A Premium Sanctuary in Marmaris City Center",
+      "type": "text",
+      "group": "general",
+      "description": ""
+    },
+    {
+      "key": "contact_email",
+      "value": "info@moniotel.com",
+      "type": "text",
+      "group": "general",
+      "description": ""
+    },
+    {
+      "key": "contact_phone",
+      "value": "+90 252 413 3355",
+      "type": "text",
+      "group": "general",
+      "description": ""
+    }
+  ],
+  "pages": [
+    {
+      "slug": {
+        "en": "home",
+        "tr": "anasayfa"
+      },
+      "title": {
+        "en": "Moni Hotel & Apartments in Marmaris",
+        "tr": "Moni Hotel & Apartments Marmaris"
+      },
+      "content": {
+        "en": "{\"type\":\"doc\",\"content\":[]}",
+        "tr": "{\"type\":\"doc\",\"content\":[]}"
+      },
+      "content_format": "blocks",
+      "layout_handle": "default.page",
+      "meta_title": {
+        "en": "Moni Hotel & Apartments | Premium stay in Marmaris",
+        "tr": "Moni Hotel & Apartments | Marmaris'te premium konaklama"
+      },
+      "meta_description": {
+        "en": "Boutique hotel and renovated apartments in Marmaris city center. Pine garden pool, premium comfort, and easy beach access.",
+        "tr": "Marmaris merkezde butik otel ve yenilenmiş apartlar. Çam bahçeli havuz, premium konfor ve plaja kolay erişim."
+      },
+      "blocks": {
+        "en": [
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "0"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "full",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "hero",
+                                      "config": {
+                                        "content": {
+                                          "image": "__HERO_IMAGE__"
+                                        },
+                                        "settings": {
+                                          "layout": "center",
+                                          "height": "min-h-[80vh]",
+                                          "overlay_color": "bg-black/50"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "Marmaris City Center",
+                                                  "text": "Marmaris City Center"
+                                                },
+                                                "settings": {
+                                                  "color": "primary",
+                                                  "size": "badge-md badge-outline px-4 py-3 font-semibold tracking-wide",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Moni Hotel & Apartments",
+                                                "settings": {
+                                                  "heading_element": "h1",
+                                                  "align": "center"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "<p class=\"text-lg text-neutral-content/85 max-w-2xl mx-auto\">A premium sanctuary with pine garden calm, boutique comfort and beach access - designed for couples, families and longer stays.</p>"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "button_group",
+                                              "config": {
+                                                "settings": {
+                                                  "justify": "justify-center",
+                                                  "gap": "gap-3"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "type": "block",
+                                                    "attrs": {
+                                                      "id": "button_item",
+                                                      "config": {
+                                                        "content": {
+                                                          "link": {
+                                                            "type": "url",
+                                                            "url": "https://www.reseliva.com/booknow/Moni-Hotel/?&lang=en",
+                                                            "text": "Book now",
+                                                            "style": "primary",
+                                                            "size": "large",
+                                                            "new_tab": true
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "block",
+                                                    "attrs": {
+                                                      "id": "button_item",
+                                                      "config": {
+                                                        "content": {
+                                                          "link": {
+                                                            "type": "url",
+                                                            "url": "/contact",
+                                                            "text": "Contact",
+                                                            "style": "secondary",
+                                                            "size": "large",
+                                                            "new_tab": false
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Why guests choose Moni",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-center text-base-content/70 max-w-2xl mx-auto mb-10\">Premium comfort, calm design, and the best location for Marmaris exploration.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Pine Garden Pool",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "A calm pool area surrounded by pine trees."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "City Center",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "Walkable to restaurants, marina and beaches."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Boutique Comfort",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "Renovated rooms and apartments with premium details."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-200",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Gallery",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "media-gallery",
+                      "config": {
+                        "content": {
+                          "collection": "__GALLERY_COLLECTION__"
+                        },
+                        "settings": {
+                          "limit": 12,
+                          "columns": "grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
+                          "ratio": "square"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Guest reviews",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-center text-base-content/70 max-w-2xl mx-auto mb-10\">Verified feedback from Google and TripAdvisor.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/2",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "Google",
+                                                  "text": "Google"
+                                                },
+                                                "settings": {
+                                                  "color": "badge-info",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "rating",
+                                              "config": {
+                                                "content": {
+                                                  "stars": 5
+                                                },
+                                                "settings": {
+                                                  "size": "rating-sm",
+                                                  "color": "bg-primary"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "\"Calm, clean and perfectly located.\""
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/2",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "TripAdvisor",
+                                                  "text": "TripAdvisor"
+                                                },
+                                                "settings": {
+                                                  "color": "badge-success",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "rating",
+                                              "config": {
+                                                "content": {
+                                                  "stars": 5
+                                                },
+                                                "settings": {
+                                                  "size": "rating-sm",
+                                                  "color": "bg-primary"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "\"A boutique oasis in Marmaris.\""
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-200",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Moni Apartment",
+                        "settings": {
+                          "heading_element": "h2"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-base-content/70 max-w-2xl\">A separate accommodation option by the same owners, ideal for longer stays and self-catering.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "button_item",
+                      "config": {
+                        "content": {
+                          "link": {
+                            "type": "url",
+                            "url": "/apartments",
+                            "text": "Explore Moni Apartment",
+                            "style": "primary",
+                            "size": "large",
+                            "new_tab": false
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "tr": [
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "0"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "full",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "hero",
+                                      "config": {
+                                        "content": {
+                                          "image": "__HERO_IMAGE__"
+                                        },
+                                        "settings": {
+                                          "layout": "center",
+                                          "height": "min-h-[80vh]",
+                                          "overlay_color": "bg-black/50"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "Marmaris Merkez",
+                                                  "text": "Marmaris Merkez"
+                                                },
+                                                "settings": {
+                                                  "color": "primary",
+                                                  "size": "badge-md badge-outline px-4 py-3 font-semibold tracking-wide",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Moni Hotel & Apartments",
+                                                "settings": {
+                                                  "heading_element": "h1",
+                                                  "align": "center"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "<p class=\"text-lg text-neutral-content/85 max-w-2xl mx-auto\">Çam bahçesinde sakin bir atmosfer, butik konfor ve plaja kolay erişim. Çiftler, aileler ve uzun konaklamalar için premium deneyim.</p>"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "button_group",
+                                              "config": {
+                                                "settings": {
+                                                  "justify": "justify-center",
+                                                  "gap": "gap-3"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "type": "block",
+                                                    "attrs": {
+                                                      "id": "button_item",
+                                                      "config": {
+                                                        "content": {
+                                                          "link": {
+                                                            "type": "url",
+                                                            "url": "https://www.reseliva.com/booknow/Moni-Hotel/?&lang=tr",
+                                                            "text": "Rezervasyon",
+                                                            "style": "primary",
+                                                            "size": "large",
+                                                            "new_tab": true
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "block",
+                                                    "attrs": {
+                                                      "id": "button_item",
+                                                      "config": {
+                                                        "content": {
+                                                          "link": {
+                                                            "type": "url",
+                                                            "url": "/contact",
+                                                            "text": "İletişim",
+                                                            "style": "secondary",
+                                                            "size": "large",
+                                                            "new_tab": false
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Neden Moni?",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-center text-base-content/70 max-w-2xl mx-auto mb-10\">Premium konfor, sakin tasarım ve Marmaris'i keşfetmek için ideal konum.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Çam Bahçeli Havuz",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "Çam ağaçlarıyla çevrili sakin bir havuz alanı."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Merkezi Konum",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "Restoranlara, marinaya ve plajlara yürüyerek ulaşım."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/3",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "title",
+                                              "config": {
+                                                "content": "Butik Konfor",
+                                                "settings": {
+                                                  "heading_element": "h4"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "Yenilenmiş odalar ve premium detaylarla apartlar."
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-200",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Galeri",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "media-gallery",
+                      "config": {
+                        "content": {
+                          "collection": "__GALLERY_COLLECTION__"
+                        },
+                        "settings": {
+                          "limit": 12,
+                          "columns": "grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
+                          "ratio": "square"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-100",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Misafir yorumları",
+                        "settings": {
+                          "heading_element": "h2",
+                          "align": "center"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-center text-base-content/70 max-w-2xl mx-auto mb-10\">Google ve TripAdvisor üzerinden doğrulanmış yorumlar.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "row",
+                      "config": {
+                        "children": [
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/2",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "Google",
+                                                  "text": "Google"
+                                                },
+                                                "settings": {
+                                                  "color": "badge-info",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "rating",
+                                              "config": {
+                                                "content": {
+                                                  "stars": 5
+                                                },
+                                                "settings": {
+                                                  "size": "rating-sm",
+                                                  "color": "bg-primary"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "\"Sakin, temiz ve konumu harika.\""
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "attrs": {
+                              "id": "column",
+                              "config": {
+                                "column_width": "1/2",
+                                "children": [
+                                  {
+                                    "type": "block",
+                                    "attrs": {
+                                      "id": "card",
+                                      "config": {
+                                        "settings": {
+                                          "style": "card-border"
+                                        },
+                                        "children": [
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "badge",
+                                              "config": {
+                                                "content": {
+                                                  "label": "TripAdvisor",
+                                                  "text": "TripAdvisor"
+                                                },
+                                                "settings": {
+                                                  "color": "badge-success",
+                                                  "outline": 1
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "rating",
+                                              "config": {
+                                                "content": {
+                                                  "stars": 5
+                                                },
+                                                "settings": {
+                                                  "size": "rating-sm",
+                                                  "color": "bg-primary"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "block",
+                                            "attrs": {
+                                              "id": "content",
+                                              "config": {
+                                                "content": "\"Marmaris'te butik bir vaha.\""
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "block",
+            "attrs": {
+              "id": "section",
+              "config": {
+                "settings": {
+                  "background": "base-200",
+                  "padding_y": "12"
+                },
+                "children": [
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "title",
+                      "config": {
+                        "content": "Moni Apartment",
+                        "settings": {
+                          "heading_element": "h2"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "content",
+                      "config": {
+                        "content": "<p class=\"text-base-content/70 max-w-2xl\">Aynı sahipler tarafından sunulan, uzun konaklamalar için uygun, mutfaklı alternatif konaklama seçeneği.</p>"
+                      }
+                    }
+                  },
+                  {
+                    "type": "block",
+                    "attrs": {
+                      "id": "button_item",
+                      "config": {
+                        "content": {
+                          "link": {
+                            "type": "url",
+                            "url": "/apartments",
+                            "text": "Moni Apartment'i keşfet",
+                            "style": "primary",
+                            "size": "large",
+                            "new_tab": false
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "status": "published"
+    }
+  ],
+  "menus": [],
+  "reusable_blocks": [],
+  "placeholders": []
+}
