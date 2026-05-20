@@ -89,9 +89,19 @@
                                 $registry = app(\Totoglu\Cms\Services\LocaleRegistry::class);
                                 $currentLocale = app()->getLocale();
                                 $locales = $registry->getLocales();
+                                $mobileModel = $page ?? $post ?? null;
+                                $mobileUrls = [];
+                                if ($mobileModel && method_exists($mobileModel, 'getTranslation')) {
+                                    $mobileUrls = tcms_alternate_urls($mobileModel);
+                                } else {
+                                    foreach ($locales as $code => $locale) {
+                                        $mobileUrls[$code] = tcms_localized_url(tcms_current_slug(), $code);
+                                    }
+                                }
                             @endphp
                             @foreach($locales as $code => $locale)
-                                <a href="{{ url(tcms_localized_url(tcms_current_slug(), $code)) }}" 
+                                @php $url = $mobileUrls[$code] ?? tcms_localized_url(tcms_current_slug(), $code); @endphp
+                                <a href="{{ url($url) }}" 
                                    class="px-2.5 py-1 rounded-md transition-all duration-200 {{ $code === $currentLocale ? 'text-primary bg-primary/10' : 'text-base-content/60 hover:text-base-content hover:bg-base-200' }}">
                                     {{ strtoupper($code) }}
                                 </a>

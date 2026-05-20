@@ -8,6 +8,9 @@
         return;
     }
 
+    // Auto-detect page or post from view context if model not provided
+    $model = $model ?? $page ?? $post ?? null;
+
     $registry = app(\Totoglu\Cms\Services\LocaleRegistry::class);
     $currentLocale = app()->getLocale();
     $locales = $registry->getLocales();
