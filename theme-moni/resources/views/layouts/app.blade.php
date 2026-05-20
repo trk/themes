@@ -242,15 +242,15 @@
                     'config' => [
                         'content' => [
                             'icon' => $icon,
-                            'icon_only' => true,
+                            'icon_only' => false,
                             'link' => [
                                 'type' => 'external_url',
                                 'external_url' => $url,
                                 'text' => $label,
                                 'style' => 'btn-ghost',
                                 'size' => 'btn-sm',
-                                'outline' => true,
-                                'block' => false,
+                                'outline' => false,
+                                'block' => true,
                                 'new_tab' => $newTab,
                             ],
                         ],
