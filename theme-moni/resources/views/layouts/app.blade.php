@@ -242,7 +242,7 @@
                     'config' => [
                         'content' => [
                             'icon' => $icon,
-                            'icon_only' => false,
+                            'icon_only' => true,
                             'link' => [
                                 'type' => 'external_url',
                                 'external_url' => $url,
@@ -250,7 +250,7 @@
                                 'style' => 'btn-ghost',
                                 'size' => 'btn-sm',
                                 'outline' => false,
-                                'block' => true,
+                                'block' => false,
                                 'new_tab' => $newTab,
                             ],
                         ],

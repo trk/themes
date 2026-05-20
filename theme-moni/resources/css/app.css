@@ -116,11 +116,15 @@
     @apply text-sm font-medium text-base-content/75 transition-colors;
   }
 
-  nav[data-menu-location="header"] .menu.menu-horizontal :where(a, summary):hover {
+  nav[data-menu-location="header"]
+    .menu.menu-horizontal
+    :where(a, summary):hover {
     @apply text-base-content;
   }
 
-  nav[data-menu-location="header"] .menu.menu-horizontal :where(a.menu-active, summary.menu-active) {
+  nav[data-menu-location="header"]
+    .menu.menu-horizontal
+    :where(a.menu-active, summary.menu-active) {
     @apply bg-transparent text-base-content font-semibold;
   }
 }
