@@ -11,17 +11,17 @@
   name: "moniotel";
   default: true;
   color-scheme: "light";
-  --color-primary: oklch(0.74 0.12 86);
-  --color-primary-content: oklch(0.99 0.01 80);
-  --color-secondary: oklch(0.32 0.03 70);
-  --color-secondary-content: oklch(0.99 0.01 80);
-  --color-accent: oklch(0.66 0.1 190);
+  --color-primary: oklch(0.8 0.12 86);
+  --color-primary-content: oklch(0.13 0.02 70);
+  --color-secondary: oklch(0.26 0.04 255);
+  --color-secondary-content: oklch(0.98 0.01 90);
+  --color-accent: oklch(0.62 0.09 190);
   --color-accent-content: oklch(0.12 0.02 200);
-  --color-neutral: oklch(0.23 0.02 70);
-  --color-base-100: oklch(0.99 0.01 80);
-  --color-base-200: oklch(0.97 0.01 80);
-  --color-base-300: oklch(0.92 0.01 80);
-  --color-base-content: oklch(0.21 0.02 70);
+  --color-neutral: oklch(0.22 0.02 255);
+  --color-base-100: oklch(0.99 0.01 95);
+  --color-base-200: oklch(0.97 0.01 95);
+  --color-base-300: oklch(0.93 0.01 95);
+  --color-base-content: oklch(0.21 0.02 255);
   --rounded-box: 1rem;
   --rounded-btn: 9999px;
   --rounded-badge: 9999px;
@@ -32,17 +32,17 @@
   name: "moniotel-night";
   prefersdark: true;
   color-scheme: "dark";
-  --color-primary: oklch(0.78 0.12 86);
-  --color-primary-content: oklch(0.12 0.02 70);
-  --color-secondary: oklch(0.86 0.05 86);
-  --color-secondary-content: oklch(0.12 0.02 70);
-  --color-accent: oklch(0.7 0.1 190);
+  --color-primary: oklch(0.82 0.12 86);
+  --color-primary-content: oklch(0.12 0.02 255);
+  --color-secondary: oklch(0.74 0.06 255);
+  --color-secondary-content: oklch(0.12 0.02 255);
+  --color-accent: oklch(0.68 0.09 190);
   --color-accent-content: oklch(0.12 0.02 200);
-  --color-neutral: oklch(0.2 0.01 70);
-  --color-base-100: oklch(0.13 0.01 70);
-  --color-base-200: oklch(0.17 0.01 70);
-  --color-base-300: oklch(0.24 0.02 70);
-  --color-base-content: oklch(0.93 0.01 80);
+  --color-neutral: oklch(0.2 0.02 255);
+  --color-base-100: oklch(0.12 0.02 255);
+  --color-base-200: oklch(0.16 0.02 255);
+  --color-base-300: oklch(0.22 0.02 255);
+  --color-base-content: oklch(0.95 0.01 95);
   --rounded-box: 1rem;
   --rounded-btn: 9999px;
   --rounded-badge: 9999px;
@@ -110,5 +110,17 @@
 
   .moni-eyebrow {
     @apply text-xs font-semibold uppercase tracking-[0.24em] text-primary/70;
+  }
+
+  nav[data-menu-location="header"] .menu :where(a, summary) {
+    @apply text-sm font-medium text-base-content/75 transition-colors;
+  }
+
+  nav[data-menu-location="header"] .menu :where(a, summary):hover {
+    @apply text-base-content;
+  }
+
+  nav[data-menu-location="header"] .menu :where(a.active, summary.active) {
+    @apply bg-primary/10 text-primary font-semibold ring-1 ring-inset ring-primary/20;
   }
 }
