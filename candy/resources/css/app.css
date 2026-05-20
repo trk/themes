@@ -55,9 +55,10 @@
 @source '../views/**/*.blade.php';
 @source '../../../../resources/views/**/*.blade.php';
 /* T-CMS Core package views (breadcrumbs, menu, etc.) */
-@source '../../../../../cms/resources/views/**/*.blade.php';
-/* T-CMS Block PHP files (contains daisyUI class definitions) */
-@source '../../../../../blocks/src/Blocks/**/*.php';
+@source '../../../../packages/totoglu/cms/resources/views/**/*.blade.php';
+/* T-CMS Block and Plugin PHP files (contains DaisyUI/Tailwind class definitions) */
+@source '../../../../plugins/**/*.php';
+@source '../../../../packages/totoglu/**/*.php';
 /* All plugin frontend views — auto-includes current and future plugins */
 @source "../../../../plugins/**/resources/views/**/*.blade.php";
 
