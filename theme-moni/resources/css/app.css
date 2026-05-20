@@ -121,6 +121,6 @@
   }
 
   nav[data-menu-location="header"] .menu.menu-horizontal :where(a.menu-active, summary.menu-active) {
-    @apply bg-primary/10 text-primary font-semibold ring-1 ring-inset ring-primary/20;
+    @apply bg-transparent text-base-content font-semibold;
   }
 }
