@@ -112,15 +112,15 @@
     @apply text-xs font-semibold uppercase tracking-[0.24em] text-primary/70;
   }
 
-  nav[data-menu-location="header"] .menu :where(a, summary) {
+  nav[data-menu-location="header"] .menu.menu-horizontal :where(a, summary) {
     @apply text-sm font-medium text-base-content/75 transition-colors;
   }
 
-  nav[data-menu-location="header"] .menu :where(a, summary):hover {
+  nav[data-menu-location="header"] .menu.menu-horizontal :where(a, summary):hover {
     @apply text-base-content;
   }
 
-  nav[data-menu-location="header"] .menu :where(a.active, summary.active) {
+  nav[data-menu-location="header"] .menu.menu-horizontal :where(a.menu-active, summary.menu-active) {
     @apply bg-primary/10 text-primary font-semibold ring-1 ring-inset ring-primary/20;
   }
 }
