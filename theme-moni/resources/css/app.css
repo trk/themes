@@ -128,3 +128,15 @@
     @apply bg-primary text-primary-content font-semibold;
   }
 }
+
+@layer utilities {
+  :where(:not(ul, details, .menu-title, .btn)).menu-active {
+    color: var(--color-primary-content);
+    background-color: var(--color-primary);
+    background-image: none;
+  }
+
+  .btn {
+    --btn-border: transparent;
+  }
+}
