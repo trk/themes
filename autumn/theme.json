@@ -53,19 +53,8 @@
                                     {
                                         "type": "block",
                                         "attrs": {
-                                            "id": "layout_slot",
-                                            "config": {
-                                                "slot": "page.blocks"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "block",
-                                        "attrs": {
-                                            "id": "layout_slot",
-                                            "config": {
-                                                "slot": "page.content"
-                                            }
+                                            "id": "page_blocks",
+                                            "config": {}
                                         }
                                     }
                                 ]
@@ -83,19 +72,8 @@
                                     {
                                         "type": "block",
                                         "attrs": {
-                                            "id": "layout_slot",
-                                            "config": {
-                                                "slot": "page.blocks"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "block",
-                                        "attrs": {
-                                            "id": "layout_slot",
-                                            "config": {
-                                                "slot": "page.content"
-                                            }
+                                            "id": "page_blocks",
+                                            "config": {}
                                         }
                                     }
                                 ]
