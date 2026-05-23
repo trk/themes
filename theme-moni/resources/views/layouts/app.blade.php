@@ -18,7 +18,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    @if ($favicon = \Totoglu\Cms\Models\SiteSetting::get('favicon'))
+    @if ($favicon = tcms_favicon())
         <link rel="icon" href="{{ Storage::disk(cms_media_disk())->url($favicon) }}">
     @endif
 

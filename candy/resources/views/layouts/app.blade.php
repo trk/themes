@@ -27,7 +27,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    @if($favicon = \Totoglu\Cms\Models\SiteSetting::get('favicon'))
+    @if($favicon = tcms_favicon())
         <link rel="icon" href="{{ Storage::disk(cms_media_disk())->url($favicon) }}">
     @endif
 
@@ -66,8 +66,8 @@
                 </div>
                 <!-- Logo -->
                 @php
-                    $logo = \Totoglu\Cms\Models\SiteSetting::get('logo');
-                    $siteName = \Totoglu\Cms\Models\SiteSetting::get('site_name', config('app.name'));
+                    $logo = tcms_site_setting('logo');
+                    $siteName = tcms_site_setting_string('site_name', (string) config('app.name'));
                 @endphp
                 <a href="{{ tcms_home_url() }}" class="btn btn-ghost text-xl font-bold">
                     @if($logo)

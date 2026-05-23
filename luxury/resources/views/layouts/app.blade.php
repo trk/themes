@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="{{ daisyui_default_preset() }}" data-default-theme="{{ daisyui_default_preset() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="{{ daisyui_default_preset() }}"
+    data-default-theme="{{ daisyui_default_preset() }}">
+
 <head>
     @tcmsDaisyUIBoot
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- SEO Meta Tags --}}
-    <x-tcms::seo.meta-tags
-        :title="$title ?? null"
-        :description="$description ?? null"
-        :image="isset($featuredImage) && $featuredImage ? Storage::disk(cms_media_disk())->url($featuredImage) : null"
-        :type="$seoType ?? 'website'"
-        :article="$seoArticle ?? null"
-        :twitter="$seoTwitter ?? null"
-        :profile="$seoProfile ?? null"
-    />
+    <x-tcms::seo.meta-tags :title="$title ?? null" :description="$description ?? null" :image="isset($featuredImage) && $featuredImage ? Storage::disk(cms_media_disk())->url($featuredImage) : null" :type="$seoType ?? 'website'" :article="$seoArticle ?? null"
+        :twitter="$seoTwitter ?? null" :profile="$seoProfile ?? null" />
 
     {{-- Structured Data --}}
-    <x-tcms::seo.structured-data
-        :page="$seoPage ?? null"
-        :post="$seoPost ?? null"
-        :breadcrumbs="$seoBreadcrumbs ?? null"
-        :includeWebsite="$seoIncludeWebsite ?? false"
-    />
+    <x-tcms::seo.structured-data :page="$seoPage ?? null" :post="$seoPost ?? null" :breadcrumbs="$seoBreadcrumbs ?? null" :includeWebsite="$seoIncludeWebsite ?? false" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    @if($favicon = \Totoglu\Cms\Models\SiteSetting::get('favicon'))
+    @if ($favicon = tcms_favicon())
         <link rel="icon" href="{{ Storage::disk(cms_media_disk())->url($favicon) }}">
     @endif
 
@@ -41,13 +31,18 @@
     <!-- Theme Assets -->
     @themeVite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
-    <style>[x-cloak] { display: none !important; }</style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
     <x-tcms::code-injection zone="head" />
 </head>
+
 <body class="min-h-screen bg-base-100 text-base-content">
     <x-tcms::code-injection zone="body_start" />
     <!-- Header -->
-    @if(function_exists('mega_menu_header_active') && mega_menu_header_active('header'))
+    @if (function_exists('mega_menu_header_active') && mega_menu_header_active('header'))
         {{-- Mega Menu Full Header --}}
         <x-dynamic-component component="mega-menu::header" location="header" />
     @else
@@ -58,21 +53,24 @@
                 <div class="dropdown lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-100 rounded-box w-52">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-100 rounded-box w-52">
                         <x-menu location="header" style="vertical" />
                     </ul>
                 </div>
                 <!-- Logo -->
                 @php
-                    $logo = \Totoglu\Cms\Models\SiteSetting::get('logo');
-                    $siteName = \Totoglu\Cms\Models\SiteSetting::get('site_name', config('app.name'));
+                    $logo = tcms_site_setting('logo');
+                    $siteName = tcms_site_setting_string('site_name', (string) config('app.name'));
                 @endphp
                 <a href="{{ tcms_home_url() }}" class="btn btn-ghost text-xl font-bold">
-                    @if($logo)
-                        <img src="{{ Storage::disk(cms_media_disk())->url($logo) }}" alt="{{ $siteName }}" class="h-8 w-auto">
+                    @if ($logo)
+                        <img src="{{ Storage::disk(cms_media_disk())->url($logo) }}" alt="{{ $siteName }}"
+                            class="h-8 w-auto">
                     @endif
                     {{ $siteName }}
                 </a>
@@ -93,7 +91,7 @@
     @endif
 
     {{-- Breadcrumbs --}}
-    @if($showBreadcrumbs ?? false)
+    @if ($showBreadcrumbs ?? false)
         <x-tcms::breadcrumbs :items="$breadcrumbItems ?? []" />
     @endif
 
@@ -104,7 +102,7 @@
     </main>
 
     <!-- Footer -->
-    @php $footerSiteName = \Totoglu\Cms\Models\SiteSetting::get('site_name', config('app.name')); @endphp
+    @php $footerSiteName = tcms_site_setting_string('site_name', (string) config('app.name')); @endphp
     <footer class="footer footer-center bg-base-200 text-base-content p-10">
         <aside>
             <p class="font-bold text-lg">{{ $footerSiteName }}</p>
@@ -122,4 +120,5 @@
     @livewireScripts
     <x-tcms::code-injection zone="body_end" />
 </body>
+
 </html>
